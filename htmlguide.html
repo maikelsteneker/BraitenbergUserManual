@@ -7,7 +7,7 @@
 <meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
 <!-- html --> 
 <meta name="src" content="htmlguide.tex"> 
-<meta name="date" content="2015-04-19 16:14:00"> 
+<meta name="date" content="2015-04-19 16:38:00"> 
 <link rel="stylesheet" type="text/css" href="htmlguide.css"> 
 </head><body 
 >
@@ -60,13 +60,13 @@ href="#x1-170001.4" id="QQ2-1-17">Adding objects</a></span>
 <br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >1.4.1 <a 
 href="#x1-180001.4.1" id="QQ2-1-18">Adding vehicles</a></span>
 <br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >1.4.2 <a 
-href="#x1-190001.4.2" id="QQ2-1-19">Adding light sources</a></span>
+href="#x1-290001.4.2" id="QQ2-1-29">Adding light sources</a></span>
 <br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >1.4.3 <a 
-href="#x1-200001.4.3" id="QQ2-1-20">Adding heat sources</a></span>
+href="#x1-300001.4.3" id="QQ2-1-30">Adding heat sources</a></span>
 <br />   &#x00A0;<span class="subsectionToc" >1.5 <a 
-href="#x1-210001.5" id="QQ2-1-21">Interacting with objects</a></span>
+href="#x1-310001.5" id="QQ2-1-31">Interacting with objects</a></span>
 <br />   &#x00A0;<span class="subsectionToc" >1.6 <a 
-href="#x1-220001.6" id="QQ2-1-22">File management</a></span>
+href="#x1-320001.6" id="QQ2-1-32">File management</a></span>
    </div>
                                                                   
 
@@ -82,9 +82,9 @@ href="#x1-120001.3">Section&#x00A0;1.3</a> explains how the virtual
 camera can be controlled by the user. <a 
 href="#x1-170001.4">Section&#x00A0;1.4</a> describes how objects can
 be added to the environment. <a 
-href="#x1-210001.5">Section&#x00A0;1.5</a> describes the interaction with
+href="#x1-310001.5">Section&#x00A0;1.5</a> describes the interaction with
 objects by the user. Finally, <a 
-href="#x1-220001.6">Section&#x00A0;1.6</a> discusses saving to and loading from
+href="#x1-320001.6">Section&#x00A0;1.6</a> discusses saving to and loading from
 files.
 <!--l. 5--><p class="indent" >   In this guide, we will occasionally refer to menus and menu items within them.
 These menus (<span 
@@ -182,19 +182,19 @@ class="content">The options window.</span></div><!--tex4ht:label?: x1-4001r1 -->
 <!--l. 34--><p class="noindent" ><span class="paragraphHead"><a 
  id="x1-50001.2"></a><span 
 class="cmbx-10">Vehicle randomness</span></span>
-   This refers to the behaviour of the Braitenberg vehicles. Recall that vehicles move
+   This refers to the behavior of the Braitenberg vehicles. Recall that vehicles move
 based on sensor input. Therefore, if the sensors connected to the wheels of the vehicle
 give no input, the vehicle will not move. When this option is activated, this
-behaviour is overriden. When a vehicle gets no input from its sensors for a
+behavior is overridden. When a vehicle gets no input from its sensors for a
 certain amount of time, it will start moving randomly. As soon as one of its
 sensors are triggered again, it will start moving according to its natural
-behaviour.
+behavior.
 <!--l. 36--><p class="noindent" ><span class="paragraphHead"><a 
  id="x1-60001.2"></a><span 
 class="cmbx-10">Show bounding boxes for vehicles</span></span>
    Collision detection is implemented by maintaining bounding boxes for vehicles.
 Such a bounding box is a rectangle in which the complete vehicle is included. This
-options shows these bounding boxes as transparant purple areas close to the ground.
+options shows these bounding boxes as transparent purple areas close to the ground.
 An example of this can be seen in <a 
 href="#x1-6001r3">Figure&#x00A0;3</a>.
 <!--l. 38--><p class="indent" >   <hr class="figure"><div class="figure" 
@@ -228,7 +228,7 @@ Enabling this option will make any vehicle that hits another vehicle or one of t
 walls surrounding the environment stop. Vehicles that have collided will not be able
 to move on their own without some sort of interaction from the user (such as moving
 the vehicle, explained in <a 
-href="#x1-210001.5">Section&#x00A0;1.5</a>.
+href="#x1-310001.5">Section&#x00A0;1.5</a>.
 <!--l. 46--><p class="noindent" ><span class="paragraphHead"><a 
  id="x1-80001.2"></a><span 
 class="cmbx-10">Show walls</span></span>
@@ -297,7 +297,7 @@ class="content">An example of a temperature gradient.</span></div><!--tex4ht:lab
 <!--l. 64--><p class="noindent" ><span class="paragraphHead"><a 
  id="x1-110001.2"></a><span 
 class="cmbx-10">Selection mode</span></span>
-   This refers to the way selected objects are marked. By default, a transparant
+   This refers to the way selected objects are marked. By default, a transparent
 cylinder is used, but alternatively, an arrow can be shown above the selected object.
 Both options are shown side-by-side in <a 
 href="#x1-11003r6">Figure&#x00A0;6</a>.
@@ -347,7 +347,7 @@ Horizontal rotation is not limited.
 <!--l. 89--><p class="noindent" >
    <h5 class="subsubsectionHead"><span class="titlemark">1.3.2   </span> <a 
  id="x1-140001.3.2"></a>Zooming</h5>
-<!--l. 90--><p class="noindent" >The mousewheel can be used to zoom in and zoom out on the scene. Scrolling up
+<!--l. 90--><p class="noindent" >The mouse wheel can be used to zoom in and zoom out on the scene. Scrolling up
 corresponds to zooming in; scrolling down corresponds to zooming out.
 <!--l. 92--><p class="noindent" >
    <h5 class="subsubsectionHead"><span class="titlemark">1.3.3   </span> <a 
@@ -365,33 +365,134 @@ respectively.
 <!--l. 95--><p class="noindent" >
    <h5 class="subsubsectionHead"><span class="titlemark">1.3.4   </span> <a 
  id="x1-160001.3.4"></a>Resetting the camera</h5>
-<!--l. 96--><p class="noindent" >At any time, the camera can be resetted to its original position through <span 
+<!--l. 96--><p class="noindent" >At any time, the camera can be reset to its original position through <span 
 class="cmbx-10">View </span><span 
-class="cmsy-10">&rarr;</span>
+class="cmsy-10">&rarr; </span><span 
+class="cmbx-10">Reset</span>
 <span 
-class="cmbx-10">Reset camera </span>(<span 
+class="cmbx-10">camera </span>(<span 
 class="cmti-10">Ctrl+0</span>).
 <!--l. 98--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.4   </span> <a 
  id="x1-170001.4"></a>Adding objects</h4>
-<!--l. 100--><p class="noindent" >
-   <h5 class="subsubsectionHead"><span class="titlemark">1.4.1   </span> <a 
- id="x1-180001.4.1"></a>Adding vehicles</h5>
+<!--l. 100--><p class="noindent" >This section discusses how objects can be added to the environment. Objects include
+vehicles (which can be configured to include different sensors and different
+connections), light sources (which influence light sensors) and heat sources (which
+influence heat sensors).
                                                                   
 
                                                                   
-<!--l. 101--><p class="noindent" >
-   <h5 class="subsubsectionHead"><span class="titlemark">1.4.2   </span> <a 
- id="x1-190001.4.2"></a>Adding light sources</h5>
 <!--l. 102--><p class="noindent" >
+   <h5 class="subsubsectionHead"><span class="titlemark">1.4.1   </span> <a 
+ id="x1-180001.4.1"></a>Adding vehicles</h5>
+<!--l. 103--><p class="noindent" >Adding a vehicle to the environment is done via <span 
+class="cmbx-10">Edit </span><span 
+class="cmsy-10">&rarr; </span><span 
+class="cmbx-10">Add vehicle...</span>
+(<span 
+class="cmti-10">Ctrl+A</span>). This opens the add vehicle window. Note that this window can
+only be opened if no other addition windows (for vehicles, light sources or
+heat sources) are currently opened. The add vehicle window is shown in
+<a 
+href="#x1-18001r7">subsubsection&#x00A0;7</a>.
+<!--l. 105--><p class="indent" >   <hr class="figure"><div class="figure" 
+>
+                                                                  
+
+                                                                  
+<a 
+ id="x1-18001r7"></a>
+                                                                  
+
+                                                                  
+
+<!--l. 107--><p class="noindent" ><img 
+src="figures/addVehicle.png" alt="PIC"  
+>
+<a 
+ id="x1-18002"></a>
+<br /> <div class="caption" 
+><span class="id">Figure&#x00A0;7: </span><span  
+class="content">The add vehicle window.</span></div><!--tex4ht:label?: x1-18001r1 -->
+                                                                  
+
+                                                                  
+<!--l. 109--><p class="indent" >   </div><hr class="endfigure">
+<!--l. 111--><p class="indent" >   In this window, a number of different properties of the vehicle can be
+configured.
+<!--l. 113--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x1-190001.4.1"></a><span 
+class="cmbx-10">Pre-set vehicle</span></span>
+   There are a number of pre-set profiles for vehicles. Such a profile contains the
+type of vehicle (e.g. two-wheel), both of its sensors and the assignment of sensors to
+motors. Examples of these include light-seeking (moving towards light), heat-fleeing
+(moving away from heat) and random (randomly accelerating or slowing down).
+Choosing a pre-set vehicle here sets all of these other options in the window, but the
+reverse also works. That is, a manually configured pre-set vehicle will be recognized
+as such.
+<!--l. 115--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x1-200001.4.1"></a><span 
+class="cmbx-10">Type of vehicle</span></span>
+   This is the type of the vehicle, affecting both how it looks and the way its sensors
+are connected.
+<!--l. 117--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x1-210001.4.1"></a><span 
+class="cmbx-10">Sensor 1/2</span></span>
+   These are the sensors that the vehicle uses. Options include light (higher values
+when the sensor faces more light), temperature (higher values when the sensor is
+close to a heat source), random (pseudo-random variation in values) and dummy (no
+input at all).
+<!--l. 119--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x1-220001.4.1"></a><span 
+class="cmbx-10">Add random fluctuation</span></span>
+   This adds some random fluctuation to the sensors. This can be done to make
+sensors behave more like actual sensors instead of mathematically perfect
+sensors. Fluctuation can be activated per sensor independently for the sake of
+flexibility.
+<!--l. 121--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x1-230001.4.1"></a><span 
+class="cmbx-10">Left wheel</span></span>
+   The sensor that should be assigned to the left wheel. This means that the left
+wheel will rotate more if the sensor selected here gives higher values.
+<!--l. 123--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x1-240001.4.1"></a><span 
+class="cmbx-10">Right wheel</span></span>
+   Analogue to the left wheel.
+<!--l. 125--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x1-250001.4.1"></a><span 
+class="cmbx-10">Reverse sensor positions</span></span>
+   Swaps the sensors for the left and right wheels.
+<!--l. 127--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x1-260001.4.1"></a><span 
+class="cmbx-10">Angle</span></span>
+   The angle at which the vehicle is rotated initially.
+                                                                  
+
+                                                                  
+<!--l. 129--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x1-270001.4.1"></a><span 
+class="cmbx-10">Preview</span></span>
+   Whether or not to show a preview in the environment before the vehicle is
+added.
+<!--l. 131--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x1-280001.4.1"></a><span 
+class="cmbx-10">Add to environment and close</span></span>
+   This adds the vehicle to the environment and starts its behavior. The add
+vehicle window is closed at this point and the vehicle is selected (see also
+<a 
+href="#x1-310001.5">Section&#x00A0;1.5</a>).
+<!--l. 135--><p class="noindent" >
+   <h5 class="subsubsectionHead"><span class="titlemark">1.4.2   </span> <a 
+ id="x1-290001.4.2"></a>Adding light sources</h5>
+<!--l. 138--><p class="noindent" >
    <h5 class="subsubsectionHead"><span class="titlemark">1.4.3   </span> <a 
- id="x1-200001.4.3"></a>Adding heat sources</h5>
-<!--l. 104--><p class="noindent" >
+ id="x1-300001.4.3"></a>Adding heat sources</h5>
+<!--l. 141--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.5   </span> <a 
- id="x1-210001.5"></a>Interacting with objects</h4>
-<!--l. 108--><p class="noindent" >
+ id="x1-310001.5"></a>Interacting with objects</h4>
+<!--l. 145--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.6   </span> <a 
- id="x1-220001.6"></a>File management</h4>
+ id="x1-320001.6"></a>File management</h4>
     
 </body></html> 
 
