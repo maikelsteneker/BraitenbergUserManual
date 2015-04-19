@@ -7,7 +7,7 @@
 <meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
 <!-- html --> 
 <meta name="src" content="htmlguide.tex"> 
-<meta name="date" content="2015-04-19 15:16:00"> 
+<meta name="date" content="2015-04-19 15:47:00"> 
 <link rel="stylesheet" type="text/css" href="htmlguide.css"> 
 </head><body 
 >
@@ -44,21 +44,21 @@ href="#x1-20001" id="QQ2-1-2">User guide</a></span>
 <br />   &#x00A0;<span class="subsectionToc" >1.1 <a 
 href="#x1-30001.1" id="QQ2-1-3">Preliminaries</a></span>
 <br />   &#x00A0;<span class="subsectionToc" >1.2 <a 
-href="#x1-40001.2" id="QQ2-1-5">Global options</a></span>
+href="#x1-40001.2" id="QQ2-1-4">Global options</a></span>
 <br />   &#x00A0;<span class="subsectionToc" >1.3 <a 
-href="#x1-100001.3" id="QQ2-1-14">Camera control</a></span>
+href="#x1-120001.3" id="QQ2-1-12">Camera control</a></span>
 <br />   &#x00A0;<span class="subsectionToc" >1.4 <a 
-href="#x1-110001.4" id="QQ2-1-15">Adding objects</a></span>
+href="#x1-130001.4" id="QQ2-1-13">Adding objects</a></span>
 <br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >1.4.1 <a 
-href="#x1-120001.4.1" id="QQ2-1-16">Adding vehicles</a></span>
+href="#x1-140001.4.1" id="QQ2-1-14">Adding vehicles</a></span>
 <br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >1.4.2 <a 
-href="#x1-130001.4.2" id="QQ2-1-17">Adding light sources</a></span>
+href="#x1-150001.4.2" id="QQ2-1-15">Adding light sources</a></span>
 <br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >1.4.3 <a 
-href="#x1-140001.4.3" id="QQ2-1-18">Adding heat sources</a></span>
+href="#x1-160001.4.3" id="QQ2-1-16">Adding heat sources</a></span>
 <br />   &#x00A0;<span class="subsectionToc" >1.5 <a 
-href="#x1-150001.5" id="QQ2-1-19">Interacting with objects</a></span>
+href="#x1-170001.5" id="QQ2-1-17">Interacting with objects</a></span>
 <br />   &#x00A0;<span class="subsectionToc" >1.6 <a 
-href="#x1-160001.6" id="QQ2-1-20">File management</a></span>
+href="#x1-180001.6" id="QQ2-1-18">File management</a></span>
    </div>
                                                                   
 
@@ -70,13 +70,13 @@ href="#x1-160001.6" id="QQ2-1-20">File management</a></span>
 href="#x1-30001.1">Section&#x00A0;1.1</a> discusses how the application can be set up and started. <a 
 href="#x1-40001.2">Section&#x00A0;1.2</a>
 discusses how to change some global options. <a 
-href="#x1-100001.3">Section&#x00A0;1.3</a> explains how the virtual
+href="#x1-120001.3">Section&#x00A0;1.3</a> explains how the virtual
 camera can be controlled by the user. <a 
-href="#x1-110001.4">Section&#x00A0;1.4</a> describes how objects can
+href="#x1-130001.4">Section&#x00A0;1.4</a> describes how objects can
 be added to the environment. <a 
-href="#x1-150001.5">Section&#x00A0;1.5</a> describes the interaction with
+href="#x1-170001.5">Section&#x00A0;1.5</a> describes the interaction with
 objects by the user. Finally, <a 
-href="#x1-160001.6">Section&#x00A0;1.6</a> discusses saving to and loading from
+href="#x1-180001.6">Section&#x00A0;1.6</a> discusses saving to and loading from
 files.
 <!--l. 5--><p class="indent" >   In this guide, we will occasionally refer to menus and menu items within them.
 These menus (<span 
@@ -95,55 +95,83 @@ class="cmbx-10">File </span>menu. Finally, many options can also be
 activated through a keyboard shortcut. These will be between brackets and
 <span 
 class="cmti-10">emphasized</span>.
-<!--l. 7--><p class="noindent" >
+<!--l. 7--><p class="indent" >   This user guide is also available online at <a 
+href="http://maikelsteneker.github.io/BraitenbergUserManual" class="url" ><span 
+class="cmtt-10">http://maikelsteneker.github.io/BraitenbergUserManual</span></a>.
+<!--l. 9--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.1   </span> <a 
  id="x1-30001.1"></a>Preliminaries</h4>
-<!--l. 9--><p class="noindent" >Building the project from source can be done using maven. We recommend using an
+<!--l. 11--><p class="noindent" >Building the project from source can be done using maven. We recommend using an
 IDE, such as NetBeans, for this. This will retrieve some required libraries (specifically
 OpenGL support through JOGL) and build the entire application. Upon starting the
 application, an empty environment will be shown. An example of this can be found in
 <a 
-href="#x1-30011">Figure&#x00A0;1</a>.
-<!--l. 11--><p class="indent" >   The environment shown here consists of a floor and four walls surrounding it, but
+href="#x1-3001r1">Section&#x00A0;1</a>.
+<!--l. 13--><p class="indent" >   The environment shown here consists of a floor and four walls surrounding it, but
 it does not contain any vehicles or other object. Adding these is discussed in
 <a 
-href="#x1-110001.4">Section&#x00A0;1.4</a>.
-<!--l. 13--><p class="indent" >   <hr class="figure"><div class="figure" 
+href="#x1-130001.4">Section&#x00A0;1.4</a>.
+<!--l. 15--><p class="indent" >   <hr class="figure"><div class="figure" 
 >
                                                                   
 
                                                                   
 <a 
- id="x1-30011"></a>
+ id="x1-3001r1"></a>
                                                                   
 
                                                                   
 
-<!--l. 15--><p class="noindent" ><img 
+<!--l. 17--><p class="noindent" ><img 
 src="figures/startup.png" alt="PIC"  
 >
+<a 
+ id="x1-3002"></a>
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;1: </span><span  
-class="content">The initial screen shown when starting up the application.</span></div><!--tex4ht:label?: x1-30011 -->
+class="content">The initial screen shown when starting up the application.</span></div><!--tex4ht:label?: x1-3001r1 -->
                                                                   
 
                                                                   
-<!--l. 17--><p class="indent" >   </div><hr class="endfigure">
+<!--l. 19--><p class="indent" >   </div><hr class="endfigure">
    <h4 class="subsectionHead"><span class="titlemark">1.2   </span> <a 
  id="x1-40001.2"></a>Global options</h4>
-<!--l. 21--><p class="noindent" >Global options can be configured via <span 
+<!--l. 23--><p class="noindent" >Global options can be configured via <span 
 class="cmbx-10">Tools </span><span 
 class="cmsy-10">&rarr; </span><span 
 class="cmbx-10">Options </span>(<span 
 class="cmti-10">Ctrl+Shift+O</span>). This will
 open the options window, as shown in <a 
-href="#x1-90012">Figure&#x00A0;2</a>.
-<!--l. 23--><p class="indent" >   The options in this window are global options that apply to everything
+href="#x1-4001r2">Section&#x00A0;2</a>.
+<!--l. 25--><p class="indent" >   The options in this window are global options that apply to everything
 within the environment. No confirmation is necessary; changing an option
 in the options window makes the result immediately visible in the main
 window.
-<!--l. 25--><p class="indent" >   The options are as follows:
-<!--l. 26--><p class="noindent" ><span class="paragraphHead"><a 
+<!--l. 27--><p class="indent" >   <hr class="figure"><div class="figure" 
+>
+                                                                  
+
+                                                                  
+<a 
+ id="x1-4001r2"></a>
+                                                                  
+
+                                                                  
+
+<!--l. 29--><p class="noindent" ><img 
+src="figures/options.png" alt="PIC"  
+>
+<a 
+ id="x1-4002"></a>
+<br /> <div class="caption" 
+><span class="id">Figure&#x00A0;2: </span><span  
+class="content">The options window.</span></div><!--tex4ht:label?: x1-4001r1 -->
+                                                                  
+
+                                                                  
+<!--l. 31--><p class="indent" >   </div><hr class="endfigure">
+<!--l. 33--><p class="indent" >   The options are as follows:
+<!--l. 34--><p class="noindent" ><span class="paragraphHead"><a 
  id="x1-50001.2"></a><span 
 class="cmbx-10">Vehicle randomness</span></span>
    This refers to the behaviour of the Braitenberg vehicles. Recall that vehicles move
@@ -153,15 +181,38 @@ behaviour is overriden. When a vehicle gets no input from its sensors for a
 certain amount of time, it will start moving randomly. As soon as one of its
 sensors are triggered again, it will start moving according to its natural
 behaviour.
-<!--l. 28--><p class="noindent" ><span class="paragraphHead"><a 
+<!--l. 36--><p class="noindent" ><span class="paragraphHead"><a 
  id="x1-60001.2"></a><span 
 class="cmbx-10">Show bounding boxes for vehicles</span></span>
    Collision detection is implemented by maintaining bounding boxes for vehicles.
 Such a bounding box is a rectangle in which the complete vehicle is included. This
 options shows these bounding boxes as transparant purple areas close to the ground.
 An example of this can be seen in <a 
-href="#x1-90023">Figure&#x00A0;3</a>.
-<!--l. 30--><p class="noindent" ><span class="paragraphHead"><a 
+href="#x1-6001r3">paragraph&#x00A0;3</a>.
+<!--l. 38--><p class="indent" >   <hr class="figure"><div class="figure" 
+>
+                                                                  
+
+                                                                  
+<a 
+ id="x1-6001r3"></a>
+                                                                  
+
+                                                                  
+
+<!--l. 40--><p class="noindent" ><img 
+src="figures/boundingbox.png" alt="PIC"  
+>
+<a 
+ id="x1-6002"></a>
+<br /> <div class="caption" 
+><span class="id">Figure&#x00A0;3: </span><span  
+class="content">A vehicle with its bounding box (shown in purple).</span></div><!--tex4ht:label?: x1-6001r1 -->
+                                                                  
+
+                                                                  
+<!--l. 42--><p class="indent" >   </div><hr class="endfigure">
+<!--l. 44--><p class="noindent" ><span class="paragraphHead"><a 
  id="x1-70001.2"></a><span 
 class="cmbx-10">Collision detection</span></span>
    Collision detection prevents moving vehicles from passing through each other.
@@ -169,103 +220,126 @@ Enabling this option will make any vehicle that hits another vehicle or one of t
 walls surrounding the environment stop. Vehicles that have collided will not be able
 to move on their own without some sort of interaction from the user (such as moving
 the vehicle, explained in <a 
-href="#x1-150001.5">Section&#x00A0;1.5</a>.
-<!--l. 32--><p class="noindent" ><span class="paragraphHead"><a 
+href="#x1-170001.5">Section&#x00A0;1.5</a>.
+<!--l. 46--><p class="noindent" ><span class="paragraphHead"><a 
  id="x1-80001.2"></a><span 
 class="cmbx-10">Show walls</span></span>
    This shows the walls surrounding the environment. Disabling this option might be
 useful to more easily see the vehicles when the camera is rotated.
-<!--l. 34--><p class="noindent" ><span class="paragraphHead"><a 
+<!--l. 48--><p class="noindent" ><span class="paragraphHead"><a 
  id="x1-90001.2"></a><span 
 class="cmbx-10">Show bounding boxes for walls</span></span>
    This shows bounding boxes for walls as green rectangles on the ground level. This
 may be useful to get an indication of when vehicles collide with a wall when the walls
 themselves are not shown. An example of a bounding box for a wall is shown in
 <a 
-href="#x1-90034">Figure&#x00A0;4</a>.
-<!--l. 36--><p class="indent" >   <hr class="figure"><div class="figure" 
+href="#x1-9001r4">paragraph&#x00A0;4</a>.
+<!--l. 50--><p class="indent" >   <hr class="figure"><div class="figure" 
 >
                                                                   
 
                                                                   
 <a 
- id="x1-90012"></a>
+ id="x1-9001r4"></a>
                                                                   
 
                                                                   
 
-<!--l. 38--><p class="noindent" ><img 
-src="figures/options.png" alt="PIC"  
->
-<br /> <div class="caption" 
-><span class="id">Figure&#x00A0;2: </span><span  
-class="content">The options window.</span></div><!--tex4ht:label?: x1-90012 -->
-                                                                  
-
-                                                                  
-<!--l. 40--><p class="indent" >   </div><hr class="endfigure">
-<!--l. 42--><p class="indent" >   <hr class="figure"><div class="figure" 
->
-                                                                  
-
-                                                                  
-<a 
- id="x1-90023"></a>
-                                                                  
-
-                                                                  
-
-<!--l. 44--><p class="noindent" ><img 
-src="figures/boundingbox.png" alt="PIC"  
->
-<br /> <div class="caption" 
-><span class="id">Figure&#x00A0;3: </span><span  
-class="content">A vehicle with its bounding box (shown in purple).</span></div><!--tex4ht:label?: x1-90023 -->
-                                                                  
-
-                                                                  
-<!--l. 46--><p class="indent" >   </div><hr class="endfigure">
-<!--l. 48--><p class="indent" >   <hr class="figure"><div class="figure" 
->
-                                                                  
-
-                                                                  
-<a 
- id="x1-90034"></a>
-                                                                  
-
-                                                                  
-
-<!--l. 50--><p class="noindent" ><img 
+<!--l. 52--><p class="noindent" ><img 
 src="figures/wall.png" alt="PIC"  
 >
+<a 
+ id="x1-9002"></a>
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;4: </span><span  
-class="content">The bounding boxes of a walls (shown in green).</span></div><!--tex4ht:label?: x1-90034 -->
+class="content">The bounding boxes of a walls (shown in green).</span></div><!--tex4ht:label?: x1-9001r1 -->
                                                                   
 
                                                                   
-<!--l. 52--><p class="indent" >   </div><hr class="endfigure">
+<!--l. 54--><p class="indent" >   </div><hr class="endfigure">
+<!--l. 56--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x1-100001.2"></a><span 
+class="cmbx-10">Show temperature gradient</span></span>
+   This shows circular shapes around heat sources that indicate the temperature of
+the environment. An example of this is shown in <a 
+href="#x1-10001r5">paragraph&#x00A0;5</a>.
+<!--l. 58--><p class="indent" >   <hr class="figure"><div class="figure" 
+>
+                                                                  
+
+                                                                  
+<a 
+ id="x1-10001r5"></a>
+                                                                  
+
+                                                                  
+
+<!--l. 60--><p class="noindent" ><img 
+src="figures/temperature.png" alt="PIC"  
+>
+<a 
+ id="x1-10002"></a>
+<br /> <div class="caption" 
+><span class="id">Figure&#x00A0;5: </span><span  
+class="content">An example of a temperature gradient.</span></div><!--tex4ht:label?: x1-10001r1 -->
+                                                                  
+
+                                                                  
+<!--l. 62--><p class="indent" >   </div><hr class="endfigure">
+<!--l. 64--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x1-110001.2"></a><span 
+class="cmbx-10">Selection mode</span></span>
+   This refers to the way selected objects are marked. By default, a transparant
+cylinder is used, but alternatively, an arrow can be shown above the selected object.
+Both options are shown side-by-side in <a 
+href="#x1-11003r6">paragraph&#x00A0;6</a>.
+<!--l. 66--><p class="indent" >   <hr class="figure"><div class="figure" 
+>
+                                                                  
+
+                                                                  
+<a 
+ id="x1-11003r6"></a>
+                                                                  
+
+                                                                  
+<!--l. 68--><p class="noindent" ><a 
+ id="x1-11001r1"></a>
+<!--l. 70--><p class="noindent" ><span 
+class="cmr-9">(a) A transparant cylinder</span>
+&#x00A0; <a 
+ id="x1-11002r2"></a>
+<!--l. 76--><p class="noindent" ><span 
+class="cmr-9">(b) An arrow</span>
+<a 
+ id="x1-11004"></a>
+<br /> <div class="caption" 
+><span class="id">Figure&#x00A0;6: </span><span  
+class="content">The different selection modes.</span></div><!--tex4ht:label?: x1-11003r1 -->
+                                                                  
+
+                                                                  
+<!--l. 80--><p class="indent" >   </div><hr class="endfigure">
    <h4 class="subsectionHead"><span class="titlemark">1.3   </span> <a 
- id="x1-100001.3"></a>Camera control</h4>
-<!--l. 58--><p class="noindent" >
+ id="x1-120001.3"></a>Camera control</h4>
+<!--l. 86--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.4   </span> <a 
- id="x1-110001.4"></a>Adding objects</h4>
-<!--l. 60--><p class="noindent" >
+ id="x1-130001.4"></a>Adding objects</h4>
+<!--l. 88--><p class="noindent" >
    <h5 class="subsubsectionHead"><span class="titlemark">1.4.1   </span> <a 
- id="x1-120001.4.1"></a>Adding vehicles</h5>
-<!--l. 61--><p class="noindent" >
+ id="x1-140001.4.1"></a>Adding vehicles</h5>
+<!--l. 89--><p class="noindent" >
    <h5 class="subsubsectionHead"><span class="titlemark">1.4.2   </span> <a 
- id="x1-130001.4.2"></a>Adding light sources</h5>
-<!--l. 62--><p class="noindent" >
+ id="x1-150001.4.2"></a>Adding light sources</h5>
+<!--l. 90--><p class="noindent" >
    <h5 class="subsubsectionHead"><span class="titlemark">1.4.3   </span> <a 
- id="x1-140001.4.3"></a>Adding heat sources</h5>
-<!--l. 64--><p class="noindent" >
+ id="x1-160001.4.3"></a>Adding heat sources</h5>
+<!--l. 92--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.5   </span> <a 
- id="x1-150001.5"></a>Interacting with objects</h4>
-<!--l. 68--><p class="noindent" >
+ id="x1-170001.5"></a>Interacting with objects</h4>
+<!--l. 96--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.6   </span> <a 
- id="x1-160001.6"></a>File management</h4>
+ id="x1-180001.6"></a>File management</h4>
     
 </body></html> 
 
