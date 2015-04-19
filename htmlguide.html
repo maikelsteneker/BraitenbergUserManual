@@ -7,7 +7,7 @@
 <meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
 <!-- html --> 
 <meta name="src" content="htmlguide.tex"> 
-<meta name="date" content="2015-04-19 15:53:00"> 
+<meta name="date" content="2015-04-19 16:14:00"> 
 <link rel="stylesheet" type="text/css" href="htmlguide.css"> 
 </head><body 
 >
@@ -47,18 +47,26 @@ href="#x1-30001.1" id="QQ2-1-3">Preliminaries</a></span>
 href="#x1-40001.2" id="QQ2-1-4">Global options</a></span>
 <br />   &#x00A0;<span class="subsectionToc" >1.3 <a 
 href="#x1-120001.3" id="QQ2-1-12">Camera control</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >1.3.1 <a 
+href="#x1-130001.3.1" id="QQ2-1-13">Rotation</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >1.3.2 <a 
+href="#x1-140001.3.2" id="QQ2-1-14">Zooming</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >1.3.3 <a 
+href="#x1-150001.3.3" id="QQ2-1-15">Moving</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >1.3.4 <a 
+href="#x1-160001.3.4" id="QQ2-1-16">Resetting the camera</a></span>
 <br />   &#x00A0;<span class="subsectionToc" >1.4 <a 
-href="#x1-130001.4" id="QQ2-1-13">Adding objects</a></span>
+href="#x1-170001.4" id="QQ2-1-17">Adding objects</a></span>
 <br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >1.4.1 <a 
-href="#x1-140001.4.1" id="QQ2-1-14">Adding vehicles</a></span>
+href="#x1-180001.4.1" id="QQ2-1-18">Adding vehicles</a></span>
 <br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >1.4.2 <a 
-href="#x1-150001.4.2" id="QQ2-1-15">Adding light sources</a></span>
+href="#x1-190001.4.2" id="QQ2-1-19">Adding light sources</a></span>
 <br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >1.4.3 <a 
-href="#x1-160001.4.3" id="QQ2-1-16">Adding heat sources</a></span>
+href="#x1-200001.4.3" id="QQ2-1-20">Adding heat sources</a></span>
 <br />   &#x00A0;<span class="subsectionToc" >1.5 <a 
-href="#x1-170001.5" id="QQ2-1-17">Interacting with objects</a></span>
+href="#x1-210001.5" id="QQ2-1-21">Interacting with objects</a></span>
 <br />   &#x00A0;<span class="subsectionToc" >1.6 <a 
-href="#x1-180001.6" id="QQ2-1-18">File management</a></span>
+href="#x1-220001.6" id="QQ2-1-22">File management</a></span>
    </div>
                                                                   
 
@@ -72,11 +80,11 @@ href="#x1-40001.2">Section&#x00A0;1.2</a>
 discusses how to change some global options. <a 
 href="#x1-120001.3">Section&#x00A0;1.3</a> explains how the virtual
 camera can be controlled by the user. <a 
-href="#x1-130001.4">Section&#x00A0;1.4</a> describes how objects can
+href="#x1-170001.4">Section&#x00A0;1.4</a> describes how objects can
 be added to the environment. <a 
-href="#x1-170001.5">Section&#x00A0;1.5</a> describes the interaction with
+href="#x1-210001.5">Section&#x00A0;1.5</a> describes the interaction with
 objects by the user. Finally, <a 
-href="#x1-180001.6">Section&#x00A0;1.6</a> discusses saving to and loading from
+href="#x1-220001.6">Section&#x00A0;1.6</a> discusses saving to and loading from
 files.
 <!--l. 5--><p class="indent" >   In this guide, we will occasionally refer to menus and menu items within them.
 These menus (<span 
@@ -110,7 +118,7 @@ href="#x1-3001r1">Section&#x00A0;1</a>.
 <!--l. 13--><p class="indent" >   The environment shown here consists of a floor and four walls surrounding it, but
 it does not contain any vehicles or other object. Adding these is discussed in
 <a 
-href="#x1-130001.4">Section&#x00A0;1.4</a>.
+href="#x1-170001.4">Section&#x00A0;1.4</a>.
 <!--l. 15--><p class="indent" >   <hr class="figure"><div class="figure" 
 >
                                                                   
@@ -220,7 +228,7 @@ Enabling this option will make any vehicle that hits another vehicle or one of t
 walls surrounding the environment stop. Vehicles that have collided will not be able
 to move on their own without some sort of interaction from the user (such as moving
 the vehicle, explained in <a 
-href="#x1-170001.5">Section&#x00A0;1.5</a>.
+href="#x1-210001.5">Section&#x00A0;1.5</a>.
 <!--l. 46--><p class="noindent" ><span class="paragraphHead"><a 
  id="x1-80001.2"></a><span 
 class="cmbx-10">Show walls</span></span>
@@ -326,24 +334,64 @@ class="content">The different selection modes.</span></div><!--tex4ht:label?: x1
 <!--l. 80--><p class="indent" >   </div><hr class="endfigure">
    <h4 class="subsectionHead"><span class="titlemark">1.3   </span> <a 
  id="x1-120001.3"></a>Camera control</h4>
+<!--l. 84--><p class="noindent" >The environment can be viewed through a virtual camera. This camera can be
+controlled in a number of different ways.
 <!--l. 86--><p class="noindent" >
-   <h4 class="subsectionHead"><span class="titlemark">1.4   </span> <a 
- id="x1-130001.4"></a>Adding objects</h4>
-<!--l. 88--><p class="noindent" >
-   <h5 class="subsubsectionHead"><span class="titlemark">1.4.1   </span> <a 
- id="x1-140001.4.1"></a>Adding vehicles</h5>
+   <h5 class="subsubsectionHead"><span class="titlemark">1.3.1   </span> <a 
+ id="x1-130001.3.1"></a>Rotation</h5>
+<!--l. 87--><p class="noindent" >The camera is rotated by dragging the mouse (while keeping the mouse button
+pressed) over the screen. Horizontal movement corresponds to rotating horizontally.
+Vertical movement corresponds to rotating vertically. Vertical rotation is limited to
+prevent rotating underground or ending with a camera in which the ground is up.
+Horizontal rotation is not limited.
 <!--l. 89--><p class="noindent" >
-   <h5 class="subsubsectionHead"><span class="titlemark">1.4.2   </span> <a 
- id="x1-150001.4.2"></a>Adding light sources</h5>
-<!--l. 90--><p class="noindent" >
-   <h5 class="subsubsectionHead"><span class="titlemark">1.4.3   </span> <a 
- id="x1-160001.4.3"></a>Adding heat sources</h5>
+   <h5 class="subsubsectionHead"><span class="titlemark">1.3.2   </span> <a 
+ id="x1-140001.3.2"></a>Zooming</h5>
+<!--l. 90--><p class="noindent" >The mousewheel can be used to zoom in and zoom out on the scene. Scrolling up
+corresponds to zooming in; scrolling down corresponds to zooming out.
 <!--l. 92--><p class="noindent" >
+   <h5 class="subsubsectionHead"><span class="titlemark">1.3.3   </span> <a 
+ id="x1-150001.3.3"></a>Moving</h5>
+<!--l. 93--><p class="noindent" >Moving around through the environment can be done using the <span 
+class="cmti-10">WASD </span>keys on the
+keyboard. These move the point the camera is aimed at over the ground.
+The <span 
+class="cmti-10">W  </span>key moves in the direction the camera is facing. The <span 
+class="cmti-10">S </span>direction
+moves in the reverse direction. The <span 
+class="cmti-10">A </span>and <span 
+class="cmti-10">D </span>keys move to the left and right
+respectively.
+<!--l. 95--><p class="noindent" >
+   <h5 class="subsubsectionHead"><span class="titlemark">1.3.4   </span> <a 
+ id="x1-160001.3.4"></a>Resetting the camera</h5>
+<!--l. 96--><p class="noindent" >At any time, the camera can be resetted to its original position through <span 
+class="cmbx-10">View </span><span 
+class="cmsy-10">&rarr;</span>
+<span 
+class="cmbx-10">Reset camera </span>(<span 
+class="cmti-10">Ctrl+0</span>).
+<!--l. 98--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">1.4   </span> <a 
+ id="x1-170001.4"></a>Adding objects</h4>
+<!--l. 100--><p class="noindent" >
+   <h5 class="subsubsectionHead"><span class="titlemark">1.4.1   </span> <a 
+ id="x1-180001.4.1"></a>Adding vehicles</h5>
+                                                                  
+
+                                                                  
+<!--l. 101--><p class="noindent" >
+   <h5 class="subsubsectionHead"><span class="titlemark">1.4.2   </span> <a 
+ id="x1-190001.4.2"></a>Adding light sources</h5>
+<!--l. 102--><p class="noindent" >
+   <h5 class="subsubsectionHead"><span class="titlemark">1.4.3   </span> <a 
+ id="x1-200001.4.3"></a>Adding heat sources</h5>
+<!--l. 104--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.5   </span> <a 
- id="x1-170001.5"></a>Interacting with objects</h4>
-<!--l. 96--><p class="noindent" >
+ id="x1-210001.5"></a>Interacting with objects</h4>
+<!--l. 108--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.6   </span> <a 
- id="x1-180001.6"></a>File management</h4>
+ id="x1-220001.6"></a>File management</h4>
     
 </body></html> 
 
